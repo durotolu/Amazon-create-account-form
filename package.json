@@ -1,0 +1,20 @@
+{
+  "name": "Amazon-create-account-form",
+  "version": "1.0.0",
+  "description": "A clone of Amazon create account form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/durotolu/Amazon-create-account-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/durotolu/Amazon-create-account-form/issues"
+  },
+  "homepage": "https://github.com/durotolu/Amazon-create-account-form#readme"
+}
