@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  /* text-align: left;
+  justify-content: left;
+  margin: 0 auto; */
 }
 
 .App-logo {
@@ -13,14 +15,46 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+form {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  text-align: left;
+  border: 1px solid blue;
+  max-width: 350px;
+  padding: 1em;
+  /* height: ; */
+  margin: auto;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  border: 1px solid red;
+  text-align: left;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: .6em;
+  width: 100%;
+}
+
+input, button {
+  height: 2em;
+}
+
+button {
+  width: 100%;
+  font-weight: bold;
+  font-size: .6em;
+  background-color: #148abe;
   color: white;
 }
 

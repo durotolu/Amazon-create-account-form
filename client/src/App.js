@@ -11,7 +11,7 @@ const initialLoginField = {
 
 function App() {
   const [loginField, setLoginField] = useState(initialLoginField);
-  
+
   const onValueChange = e => {
     setLoginField({
       ...loginField,
@@ -21,24 +21,22 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <form>
-          <h1>Create account</h1>
-          <label htmlFor="name">Your name
+      <form>
+        <h1>Create account</h1>
+        <label htmlFor="name">Your name
             <input type="text" value={loginField.name} onChange={onValueChange} name="name" />
-          </label>
-          <label htmlFor="email">Email
+        </label>
+        <label htmlFor="email">Email
             <input type="text" value={loginField.email} onChange={onValueChange} name="email" />
-          </label>
-          <label htmlFor="password">Password
+        </label>
+        <label htmlFor="password">Password
             <input type="password" value={loginField.password} onChange={onValueChange} name="password" />
-          </label>
-          <label htmlFor="repassword">Re-enter password
+        </label>
+        <label htmlFor="repassword">Re-enter password
             <input type="password" value={loginField.repassword} onChange={onValueChange} name="repassword" />
-          </label>
-          <button>Create your Amazon account</button>
-        </form>
-      </header>
+        </label>
+        <button>Create your Amazon account</button>
+      </form>
     </div>
   );
 }
