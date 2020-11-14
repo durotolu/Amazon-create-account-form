@@ -31,7 +31,7 @@ function App() {
             <input type="text" value={loginField.email} onChange={onValueChange} name="email" />
         </label>
         <label htmlFor="password">Password
-            <input type="password" placeholder="At least 6 characters" value={loginField.password} onChange={onValueChange} name="password" />
+            <input className="password-input" type="password" placeholder="At least 6 characters" value={loginField.password} onChange={onValueChange} name="password" />
           <p className="password-text">Passwords must be at least 6 characters.</p>
         </label>
         <label htmlFor="repassword">Re-enter password
