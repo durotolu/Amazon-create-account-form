@@ -41,14 +41,14 @@ h1 {
   font-size: 28px;
   line-height: 1;
   text-align: left;
-  margin-bottom: .1em;
+  margin-bottom: .3em;
 }
 
 label {
   display: flex;
   flex-direction: column;
   font-weight: bold;
-  font-size: .8em;
+  font-size: .75em;
   width: 100%;
   margin: .45em 0;
 }
@@ -79,6 +79,31 @@ p {
   margin: .2em 0;
   font-size: small;
   font-weight: initial;
+}
+
+.signin {
+  font-size: .75em;
+  margin-top: 2.5em;
+}
+
+footer {
+  margin: 3em auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 22.5em;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
 }
 
 .App-link {

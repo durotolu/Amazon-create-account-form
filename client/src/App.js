@@ -31,16 +31,24 @@ function App() {
             <input type="text" value={loginField.email} onChange={onValueChange} name="email" />
         </label>
         <label htmlFor="password">Password
-            <input type="password" value={loginField.password} onChange={onValueChange} name="password" />
-        <p className="password-text">Passwords must be at least 6 characters.</p>
+            <input type="password" placeholder="At least 6 characters" value={loginField.password} onChange={onValueChange} name="password" />
+          <p className="password-text">Passwords must be at least 6 characters.</p>
         </label>
         <label htmlFor="repassword">Re-enter password
             <input type="password" value={loginField.repassword} onChange={onValueChange} name="repassword" />
         </label>
         <button>Create your Amazon account</button>
-        <p>By creating an account, you agree to Amazon's <a>Conditions of Use</a> and <a>Privacy Notice</a>.</p>
-        <p>Already have an account? Sign-In</p>
+        <p>By creating an account, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+        <p className="signin">Already have an account? <a href="#">Sign-In</a></p>
       </form>
+      <footer>
+        <nav>
+          <a href="#">Conditions of Use</a>
+          <a href="#">Privacy Notice</a>
+          <a href="#">Help</a>
+        </nav>
+        <p>© 1996-2020, Amazon.com, Inc. or its affiliates</p>
+      </footer>
     </div>
   );
 }
