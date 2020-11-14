@@ -19,6 +19,28 @@ function App() {
     });
   };
 
+  const onCreateAccount = e => {
+    const {name, email, password, repassword} = loginField;
+    if (!name || !email || !password || !repassword) {
+      alert("Form incomplete")
+      return
+    }
+    if (password.length < 6) {
+      alert("Password should be at least 6 characters")
+      return
+    }
+    if (password !== repassword) {
+      alert("Password doesn't match")
+      return
+    }
+    console.log({
+      ...loginField,
+      password: "****",
+      repassword: "****"
+    });
+    setLoginField(initialLoginField)
+  }
+
   return (
     <div className="App">
       <img className="logo" src={logo} />
@@ -37,7 +59,7 @@ function App() {
         <label htmlFor="repassword">Re-enter password
             <input type="password" value={loginField.repassword} onChange={onValueChange} name="repassword" />
         </label>
-        <button>Create your Amazon account</button>
+        <button type="button" onClick={onCreateAccount}>Create your Amazon account</button>
         <p>By creating an account, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
         <p className="signin">Already have an account? <a href="#">Sign-In</a></p>
       </form>
